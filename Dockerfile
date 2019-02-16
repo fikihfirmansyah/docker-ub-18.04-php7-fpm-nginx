@@ -2,6 +2,7 @@ FROM ubuntu:18.04
 
 MAINTAINER Dolly Aswin <dolly.aswin@gmail.com>
 
+ENV TZ=Asia/Jakarta
 RUN apt-get update -y
 RUN apt-get upgrade -y
 RUN apt-get install php -y
