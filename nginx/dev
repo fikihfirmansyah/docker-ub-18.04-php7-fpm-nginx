@@ -7,8 +7,7 @@ server {
         access_log /var/log/nginx/dev.local.access;
 
         # Custom Headers
-        add_header X-XSS-Protection "1; mode=block";
-        more_set_headers "Server: Dev";
+        # add_header X-XSS-Protection "1; mode=block";
 
         location / {
             # First attempt to serve request as file, then
@@ -16,7 +15,6 @@ server {
             try_files $uri $uri/ =404;
         } 
 
-        
         root /var/www/dev/web-front-end;
 
         # Add index.php to the list if you are using PHP
