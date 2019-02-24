@@ -17,6 +17,7 @@ RUN apt-get install php-bcmath \
     php-mysql \
     php-opcache \
     php-xml \
+    php-redis \
     php-zip -y
 RUN apt-get -y install librabbitmq-dev
 RUN apt-get -y install php-amqp
