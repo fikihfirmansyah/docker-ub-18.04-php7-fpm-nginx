@@ -6,6 +6,7 @@ ENV TZ=Asia/Jakarta
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update -y
 RUN apt-get upgrade -y
+RUN apt-get install rsync openssh-client curl zip unzip -y
 RUN apt-get install php-fpm -y
 RUN apt-get install php-bcmath \
     php-curl \
