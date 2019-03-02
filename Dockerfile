@@ -4,7 +4,7 @@ MAINTAINER Dolly Aswin <dolly.aswin@gmail.com>
 
 ENV TZ=Asia/Jakarta
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN apt-get update -y
+RUN apt-get update --fix-missing -y
 RUN apt-get upgrade -y
 RUN apt-get install rsync openssh-client curl zip unzip -y
 RUN apt-get install php-fpm -y
