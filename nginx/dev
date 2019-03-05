@@ -37,7 +37,7 @@ server {
             fastcgi_index index.php;
             fastcgi_read_timeout 300;
             include fastcgi_params;
-            fastcgi_param SCRIPT_FILENAME /var/www/dev/api/public/$fastcgi_script_name;
+            fastcgi_param SCRIPT_FILENAME /var/www/dev/api/current/public/$fastcgi_script_name;
         }
 
         # deny access to .htaccess files, if Apache's document root
