@@ -22,6 +22,7 @@ RUN apt-get install php-bcmath \
     php-zip -y
 RUN apt-get -y install librabbitmq-dev
 RUN apt-get -y install php-amqp
+RUN apt-get -y install git
 RUN sed -i -e "s/;\?daemonize\s*=\s*yes/daemonize = no/g" /etc/php/7.2/fpm/php-fpm.conf 
 
 # Nginx
