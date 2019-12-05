@@ -31,10 +31,14 @@ RUN apt-get install -y \
 RUN apt-get install -y php7.3-redis
 
 # Install PHP RabbitMQ
+RUN apt-get -y install libssl-dev
+RUN apt-get -y install libsodium-dev
 RUN apt-get -y install librabbitmq-dev
+RUN apt-get -y install php-zmq
 RUN apt-get -y install php-amqp
 
 RUN apt-get -y install git
+RUN apt-get -y install vim
 RUN sed -i -e "s/;\?daemonize\s*=\s*yes/daemonize = no/g" /etc/php/7.3/fpm/php-fpm.conf 
 
 # Nginx
