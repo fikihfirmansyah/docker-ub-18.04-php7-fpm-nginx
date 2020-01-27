@@ -25,7 +25,8 @@ RUN apt-get install -y \
     php7.3-common \
     php7.3-cli \
     php7.3-bcmath \
-    php7.3-zip 
+    php7.3-zip \
+    php-igbinary
 
 # Install PHP 7.3 Redis
 RUN apt-get install -y php7.3-redis
