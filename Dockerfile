@@ -21,6 +21,7 @@ RUN apt-get install -y \
     php7.4-gd \
     php7.4-intl \
     php7.4-mysql \
+    php7.4-pgsql \
     php7.4-mbstring \
     php7.4-xml \
     php7.4-curl \
