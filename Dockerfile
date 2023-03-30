@@ -38,8 +38,8 @@ RUN apt-get install -y php7.4-redis
 RUN apt-get -y install libssl-dev
 RUN apt-get -y install libsodium-dev
 RUN apt-get -y install librabbitmq-dev
-RUN apt-get -y install php-zmq
-RUN apt-get -y install php-amqp
+RUN apt-get -y install php7.4-zmq
+RUN apt-get -y install php7.4-amqp
 
 RUN apt-get -y install git
 RUN apt-get -y install vim
