@@ -29,7 +29,7 @@ RUN apt-get install -y \
     php7.4-cli \
     php7.4-bcmath \
     php7.4-zip \
-    php-igbinary
+    php7.4-igbinary
 
 # Install PHP 7.4 Redis
 RUN apt-get install -y php7.4-redis
